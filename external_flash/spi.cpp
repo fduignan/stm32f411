@@ -31,7 +31,7 @@ void spi::begin(void)
 	drain = SPI1->SR;				// dummy read of SR to clear MODF	
 	// enable SSM, set SSI, enable SPI, PCLK/2, MSB First Master, Clock = 1 when idle
 	// Will switch to software slave management
-	SPI1->CR1 = (1 << 4) + (1 << 2) + (1 << 1) + (1 << 0) + (1 << 5); // update : set bit 5 to slow down the clock for debugging, software slave management, CPOL=1, CPH=1
+	SPI1->CR1 = (1 << 4) + (1 << 2) + (1 << 1) + (1 << 0); // update : set bit 5 to slow down the clock for debugging, software slave management, CPOL=1, CPH=1
 	SPI1->CR2 = (1 << 2); 	// configure for 8 bit operation
    
     for (drain_count = 0; drain_count < 32; drain_count++)
