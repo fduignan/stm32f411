@@ -1,4 +1,4 @@
-// spi.h for stm32f030
+// spi.h for stm32f411
 // Author: Frank Duignan.  
 // Updates posted on http://ioprog.com 
 

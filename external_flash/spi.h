@@ -1,4 +1,4 @@
-// spi.h for stm32f030xx
+// spi.h for stm32f411
 #ifndef __spi_h
 #define __spi_h
 class spi {
